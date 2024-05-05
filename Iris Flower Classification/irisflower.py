@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import os
 
-url='https://raw.githubusercontent.com/Rii0427/Oasis-Infobyte-Internship/main/Iris%20Flower%20Classification/Iris.csv'
+url='https://raw.githubusercontent.com/Rii0427/CodSoft-Internship/main/Iris%20Flower%20Classification/Iris.csv'
 
 # Read the Iris.csv file into a pandas DataFrame
 df = pd.read_csv(url)
@@ -117,6 +117,8 @@ Y_test
 
 Y_train
 
+"""**Logistic Regression**"""
+
 #Logistic Regression
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
@@ -126,6 +128,8 @@ model.fit(X_train,Y_train)
 accuracy = model.score(X_test, Y_test)*100
 print("Accuracy:", accuracy)
 
+"""**K-Nearest Neighbour**"""
+
 #KNN - K-Nearest Neighbour
 from sklearn.neighbors import KNeighborsClassifier
 model=KNeighborsClassifier()
@@ -134,6 +138,8 @@ model.fit(X_train,Y_train)
 
 accuracy = model.score(X_test, Y_test)*100
 print("Accuracy:", accuracy)
+
+"""**Decision Tree Classifier**"""
 
 #Decision Tree Classifier
 from sklearn.tree import DecisionTreeClassifier

@@ -17,7 +17,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
-url = 'https://raw.githubusercontent.com/Rii0427/Oasis-Infobyte-Internship/main/Sales%20Prediction/Sales.csv'
+url = 'https://raw.githubusercontent.com/Rii0427/CodSoft-Internship/main/Sales%20Prediction/Sales.csv'
 df=pd.read_csv(url);
 
 df.head()
